@@ -1,0 +1,55 @@
+<aside id="sidebar">
+    <div class="sidenav-outer">
+        <div class="menu-body">
+            <ul class="nav nav-pills nav-stacked sidenav">
+                <!--<li>
+                    <img src="http://tensor.firmeo.net/assets/images/headerLogo.png" style="width:200px" class="user-avatar" [routerLink]="['home']" /> 
+                </li>-->
+                <li>
+                    <a [routerLink]="['home']" class="logo">
+                        <img src="http://tensor.firmeo.net/assets/images/logo.png" width="200px" class="user-avatar" />
+                        
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['home']">
+                        <i class="fa fa-home"></i>
+                        <span>&nbsp; Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['plans']">
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <span>&nbsp; Plans</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['assign-labeller']">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <span>&nbsp; Assign Labellers</span>
+                    </a>
+                </li>
+                <li class="nested" [ngClass]="{'expand' : showMenu === 'pages' }">
+                    <a (click)="addExpandClass('pages')"><i class="fa fa-chevron-circle-down"></i><span>&nbsp;&nbsp; Pages</span></a>
+                    <ul class="submenu">
+                        <li>
+                            <a [routerLink]="['components']"><span>Components</span></a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['blankpage']"><span>Blank Page</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li> 
+                    <a href='http://www.strapui.com/themes/ani-angular-2-bootstrap-4-theme/'>
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>&nbsp; Ani Premium Theme</span>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['']"><i class="fa fa-sign-out"></i><span>&nbsp;&nbsp; Logout</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
